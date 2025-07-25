@@ -1,3 +1,40 @@
 export default function App() {
-  return <h1>Exercício React 🤔</h1>;
+  return (
+    <>
+      <header>
+        <h1>Exercício React 🤔</h1>
+        <hr />
+        <nav>
+          <a href="">Home</a>
+          <a href="">Back End</a>
+          <a href="">PHP</a>
+          <a href="">MYSQL</a>
+        </nav>
+      </header>
+
+      <main>
+        <section>
+          <h2>Bemi-Vindo(a)ao Back-End !</h2>
+          <p>Praticando react.</p>
+
+          <article>
+            <h3>Fundamentos do Back-End</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              autem minus ab soluta optio eaque accusantium nisi. Explicabo quia
+              molestias ab inventore ducimus, dolores quam, doloremque nisi
+              nulla magnam et.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <h2>Pequeno Projeto React</h2>
+        <p>
+          Desenvolvido por <b>João Pedro</b> &copy; 2025
+        </p>
+      </footer>
+    </>
+  );
 }
