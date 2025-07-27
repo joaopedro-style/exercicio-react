@@ -1,4 +1,4 @@
-import Artigo from "../Artigo/Artigo";
+import Artigo from "./Artigo/Artigo";
 import estilos from "./Conteudo.module.css";
 
 export default function Conteudo() {
