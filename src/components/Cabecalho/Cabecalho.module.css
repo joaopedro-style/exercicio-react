@@ -1,0 +1,19 @@
+.topoSite {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+
+  hr {
+    border: none;
+    border-top: 1px solid;
+    margin: 0.4rem 0;
+  }
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}

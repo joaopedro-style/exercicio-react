@@ -1,6 +1,7 @@
+import estilos from "./Artigo.module.css";
 export default function Artigo() {
   return (
-    <article>
+    <article className={estilos.artigo}>
       <h3>Fundamentos do Back-End</h3>
       <p>
         É a parte do desenvolvimento web responsável pelo funcionamento interno
