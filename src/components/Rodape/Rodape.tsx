@@ -2,7 +2,7 @@ import type { CSSProperties } from "react";
 
 const estilosRodape: CSSProperties = {
   backgroundClip: "#333",
-  color: "white",
+  color: "cadetblue",
   textAlign: "center",
   padding: "1rem",
 };
