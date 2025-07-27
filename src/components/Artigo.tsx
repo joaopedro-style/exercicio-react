@@ -3,9 +3,9 @@ export default function Artigo() {
     <article>
       <h3>Fundamentos do Back-End</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis autem
-        minus ab soluta optio eaque accusantium nisi. Explicabo quia molestias
-        ab inventore ducimus, dolores quam, doloremque nisi nulla magnam et.
+        É a parte do desenvolvimento web responsável pelo funcionamento interno
+        da aplicação: regras de negócio, lógica de dados, autenticação,
+        comunicação com o banco de dados e servidores.
       </p>
     </article>
   );
