@@ -16,9 +16,6 @@ export default function Rodape() {
           Desenvolvido por <b>João Pedro</b> &copy; 2025
         </p>
       </footer>
-      <hr />
-      <p className="outro-texto">Praticando...</p>
-      <hr />
     </>
   );
 }
