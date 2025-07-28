@@ -5,7 +5,7 @@ export default function Conteudo() {
   return (
     <main className={estilos.conteudo}>
       <section className={`${estilos.arredondada}`}>
-        <h2>Bemi-Vindo(a)ao Back-End !</h2>
+        <h2>Bem-Vindo(a)ao Back-End !</h2>
         <p>Praticando react.</p>
 
         <Artigo />
