@@ -1,0 +1,11 @@
+.container {
+  padding: 1rem;
+  max-width: auto;
+  background-color: antiquewhite;
+  border-radius: 7px;
+  box-shadow: darkgrey;
+
+  h2 {
+    color: darkorange;
+  }
+}

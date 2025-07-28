@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import estilos from "./Menu.module.css";
 
 export default function Menu() {
   return (
     <nav className={estilos.menu}>
-      <a href="">Home</a>
-      <a href="">Back End</a>
-      <a href="">PHP</a>
-      <a href="">MYSQL</a>
+      <Link to="/">Home</Link>
+      <Link to="/BackEnd">Back End</Link>
+      <Link to="/PHP">PHP</Link>
+      <Link to="/Mysql">MYSQL</Link>
     </nav>
   );
 }
