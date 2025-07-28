@@ -11,14 +11,20 @@ export default function Conteudo() {
     setCurrentPath(location.pathname);
   }, [location]);
 
-  const getPageName = (path) => {
+  const getPageName = (path: string) => {
     if (path === "/") return "";
     return path.replace(/^\//, "");
   };
 
   return (
     <section className={`${estilos.arredondada}`}>
-      <small style={{ color: getPageName(currentPath) ? "#FFA94D" : "#888", display: "block", marginBottom: "0.5rem" }}>
+      <small
+        style={{
+          color: getPageName(currentPath) ? "#FFA94D" : "#888",
+          display: "block",
+          marginBottom: "0.5rem",
+        }}
+      >
         {getPageName(currentPath) && getPageName(currentPath)}
       </small>
       <h2>Bem-Vindo(a)ao Back-End !</h2>
