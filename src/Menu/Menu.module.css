@@ -2,11 +2,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
-
-  a {
-    color: darkorange;
-    text-decoration: none;
-    font-weight: bold;
-  }
+  background: #111;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  width: 220px;
+}
+.menu a {
+  color: darkorange;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+.menu a.active {
+  background: #222;
+  color: #FFA94D !important;
 }

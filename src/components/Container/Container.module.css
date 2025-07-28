@@ -1,11 +1,21 @@
 .container {
-  padding: 1rem;
-  max-width: auto;
-  background-color: antiquewhite;
-  border-radius: 7px;
-  box-shadow: darkgrey;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 
   h2 {
     color: darkorange;
   }
+}
+
+.container > :not(:first-child) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
