@@ -28,7 +28,7 @@ export default function Conteudo() {
         {getPageName(currentPath) && getPageName(currentPath)}
       </small>
       <h2>Bem-Vindo(a)ao Back-End !</h2>
-      <p>Praticando react.</p>
+      <p>Aprendendo sobre os Fundamentos do Back End.</p>
       <Artigo />
     </section>
   );
