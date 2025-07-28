@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
 
@@ -7,12 +8,5 @@
     color: darkorange;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
-      color: white;
-    }
   }
 }
