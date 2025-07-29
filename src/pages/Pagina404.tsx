@@ -4,7 +4,7 @@ export default function Pagina404() {
   return (
     <section>
       <h2>Página não Encontrada...</h2>
-      <p>
+      <p className="page404">
         <Link to="/">Volte para a página inicial</Link>
       </p>
     </section>
