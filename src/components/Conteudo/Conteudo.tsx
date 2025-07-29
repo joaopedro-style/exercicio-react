@@ -1,33 +1,31 @@
 import Artigo from "./Artigo/Artigo";
 import estilos from "./Conteudo.module.css";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Conteudo() {
   const location = useLocation();
-  const [currentPath, setCurrentPath] = useState(location.pathname);
 
   useEffect(() => {
-    setCurrentPath(location.pathname);
+    const nomePagina = obterNomePagina(location.pathname);
+    document.title = nomePagina || "Projeto React | Meu App";
   }, [location]);
 
-  const getPageName = (path: string) => {
-    if (path === "/") return "";
-    return path.replace(/^\//, "");
+  const obterNomePagina = (caminho: string) => {
+    if (caminho === "/") return "Home";
+    return caminho
+      .replace(/^\//, "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
   };
 
   return (
     <section className={`${estilos.arredondada}`}>
-      <small
-        style={{
-          color: getPageName(currentPath) ? "#FFA94D" : "#888",
-          display: "block",
-        }}
-      >
-        {getPageName(currentPath) && getPageName(currentPath)}
-      </small>
-      <h2>Bem-Vindo(a)ao Back-End !</h2>
-      <p>Aprendendo sobre os Fundamentos do Back End.</p>
+      <h2>Seja bem-vindo(a) ao mundo do Back-End!</h2>
+      <p>
+        Vamos explorar juntos os fundamentos que tornam as aplicações dinâmicas,
+        inteligentes e conectadas ao banco de dados.
+      </p>
       <Artigo />
     </section>
   );
