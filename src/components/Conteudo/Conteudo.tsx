@@ -22,7 +22,6 @@ export default function Conteudo() {
         style={{
           color: getPageName(currentPath) ? "#FFA94D" : "#888",
           display: "block",
-          marginBottom: "0.5rem",
         }}
       >
         {getPageName(currentPath) && getPageName(currentPath)}
