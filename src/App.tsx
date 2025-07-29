@@ -19,7 +19,7 @@ const pageTitles: Record<string, string> = {
 export default function App() {
   const location = useLocation();
   useEffect(() => {
-    const title = pageTitles[location.pathname] || "Meu Site de Rock";
+    const title = pageTitles[location.pathname] || "Meu App";
     document.title = title;
   }, [location]);
 
